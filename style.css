@@ -92,6 +92,7 @@ h3 {
   cursor: pointer;
   color: #061C23;
   transition: 0.3s all ease-in-out;
+  height: 100%;
 }
 
 .primary-button {
@@ -109,6 +110,7 @@ h3 {
   cursor: pointer;
   color: #FBFCFD;
   transition: 0.2s all ease-in-out;
+  height: 100%;
 }
 
 .primary-button:hover {
