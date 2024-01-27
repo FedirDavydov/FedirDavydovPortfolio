@@ -22,7 +22,7 @@ svg {
 body {
   background-color: #FBFCFD;
   color: rgba(6, 28, 35, 0.60);
-  font-family: 'Inter Display', sans-serif;
+  font-family: 'Golos Text', sans-serif;
   font-size: 16px;
   font-weight: 500;
   line-height: 150%;
@@ -172,7 +172,7 @@ h3 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 120px;
+  gap: 95px;
   margin-bottom: 100px;
 }
 
