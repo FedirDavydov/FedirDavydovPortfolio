@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 ul {
   list-style: none;
 }
@@ -21,10 +25,10 @@ svg {
 
 body {
   background-color: #FBFCFD;
-  color: rgba(6, 28, 35, 0.60);
+  color: rgba(6, 28, 35, 0.70);
   font-family: 'Golos Text', sans-serif;
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 150%;
   scroll-behavior: smooth;
 }
@@ -345,16 +349,16 @@ h3 {
 
 .projects-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   gap: 24px;
 }
 
 .projects-grid img {
   width: 100%;
-  aspect-ratio: 16/9;
-  height: 17rem;
+  height: 100%;
   object-fit: cover;
+  object-position:initial;
   border-radius: 8px;
   transition: 0.2s all ease-in-out;
 }
@@ -364,14 +368,8 @@ h3 {
   transform: scale(1.05);
 }
 
-@media (max-width: 1240px) {
-  .projects-grid {
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-  }
-}
 
-@media (max-width: 700px) {
+@media (max-width: 900px) {
   .projects-grid {
     grid-template-columns: 1fr;
   }
@@ -466,6 +464,10 @@ h3 {
 
 .audit button {
   margin-top: 24px;
+}
+
+.audit-image{
+  width: 450px;
 }
 
 @media (max-width: 800px) {
@@ -587,6 +589,11 @@ footer {
   display: flex;
   align-items: center;
   gap: 8px;
+  transition: 0.3s all ease-in-out;
+}
+
+.footer-link:hover{
+  font-weight: 500;
 }
 
 @media (max-width: 1200px) {
