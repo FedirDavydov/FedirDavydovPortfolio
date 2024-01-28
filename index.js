@@ -47,11 +47,11 @@ const statsList = document.querySelector('.stats-list');
 
 
 const statsData = [
-  { image: '/Assets/Award.svg', text: 'Top 1 web designer on the Uxcel platform' },
+  { image: '/Assets/Award.svg', text: '#1 web designer of 2023 in the Uxcel global rankings' },
   { image: '/Assets/Palette.svg', text: '100+ design projects completed' },
   { image: '/Assets/Figma Filled.svg', text: '1000+ people use my design templates' },
   { image: '/Assets/Upwork.svg', text: 'Ex. Upwork Top Rated freelancer' },
-  { image: '/Assets/LinkedIn Filled.svg', text: ' 40,000+ impressions on LinkedIn' }
+  { image: '/Assets/LinkedIn Filled.svg', text: ' 50,000+ impressions on LinkedIn' }
 ];
 
 statsData.forEach(stat => {
