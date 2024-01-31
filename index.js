@@ -181,7 +181,7 @@ const links = [
   },
 
   {
-    url: 'https://www.dropbox.com/scl/fi/gxftzkmmmi2gudvk45772/Fedir_Davydov_Resume.pdf?rlkey=qh7e9j6uisac02757777lcogb&dl=0',
+    url: 'https://www.dropbox.com/scl/fi/hmkj8k9s13mvlkjpeteu1/Fedir_Davydov_Resume_2024.pdf?rlkey=h07uov5sssmucfejnkx24nyvw&dl=0',
     imageSrc: '/Assets/Resume.svg',
     text: 'Resume'
   },
