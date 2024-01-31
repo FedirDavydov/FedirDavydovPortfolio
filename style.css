@@ -451,6 +451,31 @@ h3 {
   }
 }
 
+.awards{
+  margin-bottom: 150px;
+}
+
+.awards h2{
+  text-align: center;
+  margin-bottom: 64px;
+}
+
+.award-badges{
+  display: flex;
+  gap: 48px;
+  justify-content: center;
+}
+
+@media (max-width:800px){
+  .award-badges{
+    flex-direction: column;
+    align-items: center;
+  }
+  .award-badges img{
+    width: 298px;
+  }
+}
+
 .audit {
   display: flex;
   justify-content: space-around;
