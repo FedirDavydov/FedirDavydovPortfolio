@@ -157,21 +157,20 @@ h3 {
   animation-delay: 0.8s;
 }
 
-@media (max-width: 768px) {
-  .navigation-bar {
-    flex-direction: column;
-    gap: 24px;
-    align-items: flex-start;
-    margin-bottom: 64px;
-  }
+@media (max-width: 800px) {
 
-  .nav-links li {
-    width: 100%;
+  .nav-links{
+    display: none;
   }
+}
 
-  .navigation-bar button {
-    width: 100%;
+@media (max-width: 420px) {
+  .navigation-bar{
     justify-content: center;
+    margin-bottom: 40px;
+  }
+  .navigation-bar button{
+    display: none;
   }
 }
 
@@ -245,15 +244,15 @@ h3 {
 
 
   h1 {
-    font-size: 40px;
+    font-size: 38px;
   }
 
   h2 {
-    font-size: 32px;
+    font-size: 30px;
   }
 
   h3 {
-    font-size: 20px;
+    font-size: 18px;
   }
 }
 
@@ -263,6 +262,13 @@ h3 {
     grid-template-columns: 1fr 1fr 1fr;
     place-items: center;
     gap: 24px;
+  }
+}
+
+@media (max-width: 570px){
+  .hero .primary-button{
+    width: 100%;
+    justify-content: center;
   }
 }
 
@@ -505,6 +511,13 @@ h3 {
     justify-content: center;
     align-items: center;
     flex-flow: column-reverse;
+  }
+}
+
+@media (max-width: 570px) {
+  .audit .primary-button{
+    width: 100%;
+    justify-content: center;
   }
 }
 
