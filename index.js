@@ -78,19 +78,19 @@ document.addEventListener('DOMContentLoaded', function () {
     },
     {
       title: "How fast will you deliver the design?",
-      content: "Absolutely! I specialize in website redesigns and can help you create a modern, user-friendly, and conversion-focused website that reflects your brand and resonates with your target audience. During the consultation, we can discuss your redesign goals and budget to craft a customized plan."
+      content: "The timeline for delivering a design can vary based on a few key factors including the complexity of the project, the number of revisions needed, and our current workload. Typically, for a standard web design project, you can expect to see an initial concept within 5-10 business days after I've received all the necessary information and materials."
     },
     {
       title: "Can you redesign my website?",
-      content: "My free website audit provides a comprehensive analysis of your website's strengths and weaknesses. It covers aspects like design, usability, SEO, and mobile responsiveness. You'll receive a detailed report with actionable recommendations to improve your website's performance and user experience."
+      content: "Absolutely! I specialize in website redesigns and can help you create a modern, user-friendly, and conversion-focused website that reflects your brand and resonates with your target audience. During the consultation, we can discuss your redesign goals and budget to craft a customized plan."
     },
     {
       title: "What is included in a free website audit?",
-      content: "By the end of our collaboration, you can expect a stunning website that meets your business goals and objectives."
+      content: "My free website audit provides a comprehensive analysis of your website's strengths and weaknesses. It covers aspects like design, usability, SEO, and mobile responsiveness. You'll receive a detailed report with actionable recommendations to improve your website's performance and user experience."
     },
     {
       title: "What can I expect by the end of the project?",
-      content: "My pricing model is tailored to meet the needs of a diverse range of clients and projects. I offer both hourly rates and fixed project fees, depending on the nature and scope of the work. After our initial consultation, where I learn more about your specific requirements and objectives, I’ll provide you with a detailed proposal outlining the project costs. Rest assured, I aim for transparency and affordability in all my pricing structures."
+      content: "By the end of our collaboration, you can expect a stunning website that meets your business goals and objectives."
     },
 
   ];
