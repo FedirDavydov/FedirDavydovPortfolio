@@ -27,7 +27,7 @@ svg {
 }
 
 body {
-  background-color: #FBFCFD;
+  background-color: #F8F9FA;
   color: rgba(6, 28, 35, 0.70);
   font-family: 'Golos Text', sans-serif;
   font-size: 16px;
@@ -39,7 +39,7 @@ body {
 h1 {
   font-weight: 500;
   line-height: 130%;
-  font-size: 48px;
+  font-size: 50px;
   color: #061C23;
 }
 
@@ -58,7 +58,7 @@ h3 {
 }
 
 .container {
-  max-width: 1232px;
+  max-width: 1332px;
   margin: 24px auto;
   width: 100%;
   padding: 0 16px;
@@ -68,7 +68,7 @@ h3 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
 }
 
 .nav-links {
@@ -82,7 +82,7 @@ h3 {
 }
 
 .nav-links li a:hover {
-  color: #217DE9;
+  color: #1F74D9;
 }
 
 .secondary-button {
@@ -110,7 +110,7 @@ h3 {
   align-items: center;
   padding: 14px 32px;
   gap: 8px;
-  background-color: #217DE9;
+  background-color: #1F74D9;
   border: none;
   border-radius: 4px;
   font-weight: 500;
@@ -121,11 +121,11 @@ h3 {
 }
 
 .primary-button:hover {
-  background-color: #1D6FCF;
+  background-color: #1c6bc5;
 }
 
 .secondary-button:hover {
-  border-color: #217DE9;
+  border-color: #1F74D9;
 
 }
 
@@ -176,16 +176,23 @@ h3 {
 
 .hero {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   gap: 95px;
   margin-bottom: 100px;
 }
 
+.hero .secondary-button{
+  cursor: default;
+}
+
 .hero-value-proposition {
+  max-width: 823px;
   display: flex;
+  align-items: center;
   flex-direction: column;
   gap: 24px;
+  text-align: center;
 }
 
 .hero-value-proposition button {
@@ -393,7 +400,25 @@ h3 {
 
 .stats-wrapper {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  height: fit-content;
+}
+
+.reviews {
+  margin-bottom: 150px;
+}
+
+.reviews h2{
+  text-align: center;
+  max-width: 706px;
+  margin: 0 auto;
+  margin-bottom: 64px;
+}
+
+.reviews-wrapper{
+  display: flex;
+  gap: 24px;
+  justify-content: space-between;
 }
 
 .review {
@@ -414,13 +439,30 @@ h3 {
 }
 
 .client-info {
-  color: #217DE9;
+  color: #1F74D9;
   font-weight: 600;
 }
 
-.stats-info h2 {
-  margin-bottom: 24px;
+@media (max-width: 1000px){
+  .reviews-wrapper{
+    flex-direction: column;
+    gap: 24px;
+  }
+  .review{
+    width: 100%;
+  }
 }
+
+.stats-info {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.awards{
+  display: flex;
+  gap: 24px;
+}
+
 
 .stats-list {
   display: flex;
@@ -438,7 +480,6 @@ h3 {
 @media (max-width: 1050px) {
   .stats-wrapper {
     flex-direction: column;
-    gap: 48px;
     justify-content: center;
     align-items: center;
   }
@@ -457,31 +498,6 @@ h3 {
   }
 }
 
-.awards{
-  margin-bottom: 150px;
-}
-
-.awards h2{
-  text-align: center;
-  margin-bottom: 64px;
-}
-
-.award-badges{
-  display: flex;
-  gap: 48px;
-  justify-content: center;
-}
-
-.award-badges img{
-  max-width: 50%;
-}
-
-@media (max-width:800px){
-  .award-badges{
-    flex-direction: column;
-    align-items: center;
-  }
-}
 
 .audit {
   display: flex;
@@ -591,6 +607,15 @@ h3 {
   justify-content: center;
   gap: 48px;
   margin-bottom: 150px;
+  padding: 72px;
+  text-align: center;
+  background-color: white;
+  border: 2px solid rgba(33, 125, 233, 0.15);
+  border-radius: 8px;
+}
+
+.CTA h2{
+  max-width: 800px;
 }
 
 .cta-buttons {
@@ -599,7 +624,8 @@ h3 {
 }
 
 
-@media (max-width: 500px) {
+
+@media (max-width: 670px) {
   .cta-buttons {
     flex-direction: column;
     width: 100%;
@@ -617,7 +643,7 @@ footer {
   justify-content: space-between;
   align-items: center;
   padding: 24px 120px;
-  background-color: #217DE9;
+  background-color: #1F74D9;
   color: white;
 }
 

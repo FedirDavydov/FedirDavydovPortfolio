@@ -1,3 +1,5 @@
+//Benefits
+
 const benefitsData = [
   {
     title: "Functional",
@@ -43,15 +45,55 @@ benefitsData.forEach(benefit => {
   benefitsListElement.innerHTML += createBenefitElement(benefit);
 });
 
+//Reviews
+
+const reviewsData = [
+  {
+    imageSrc: "./Images/Client Image.webp",
+    reviewText: "«Fedir is a talented designer with communication skills and great UI knowledge. He is a hard-working team player who delivers on time. I recommend him»",
+    clientInfo: "Cristian"
+  },
+  {
+    imageSrc: "./Images/Client Image 2.webp",
+    reviewText: "««It was great to work with Fedir! His professionalism was 10 out of 10 and the result exceeded my expectations. I will recommend him to my colleagues and partners!»»",
+    clientInfo: "Yury"
+  },
+  {
+    imageSrc: "./Assets/Client Image.svg",
+    reviewText: "««Fedir was one of the best people we have worked with on Upwork. His communication skills were excellent and his responsiveness allowed us to be really engaged in the design process»»",
+    clientInfo: "Varun"
+  }
+];
+
+function renderReviews() {
+  const reviewsWrapper = document.getElementById("reviewsWrapper");
+
+  reviewsData.forEach(review => {
+    const reviewElement = document.createElement("div");
+    reviewElement.classList.add("review");
+
+    reviewElement.innerHTML = `
+      <img src="${review.imageSrc}" alt="client image">
+      <p class="review-text">${review.reviewText}</p>
+      <p class="client-info">${review.clientInfo}</p>
+    `;
+
+    reviewsWrapper.appendChild(reviewElement);
+  });
+}
+
+renderReviews();
+
+//Stats
+
 const statsList = document.querySelector('.stats-list');
 
 
 const statsData = [
-  { image: '/Assets/Award.svg', text: '#1 web designer of 2023 in the Uxcel global rankings' },
-  { image: '/Assets/Palette.svg', text: '100+ design projects completed' },
+  { image: '/Assets/Award.svg', text: '#1 web designer in the Uxcel global rankings' },
+  { image: '/Assets/Certificate.svg', text: 'Certified user interface designer' },
   { image: '/Assets/Figma Filled.svg', text: '1000+ people use my design templates' },
   { image: '/Assets/Upwork.svg', text: 'Ex. Upwork Top Rated freelancer' },
-  { image: '/Assets/LinkedIn Filled.svg', text: ' 50,000+ impressions on LinkedIn' }
 ];
 
 statsData.forEach(stat => {
@@ -70,6 +112,8 @@ statsData.forEach(stat => {
   statsList.appendChild(statElement);
 });
 
+//FAQ
+
 document.addEventListener('DOMContentLoaded', function () {
   const questionData = [
     {
@@ -79,6 +123,10 @@ document.addEventListener('DOMContentLoaded', function () {
     {
       title: "How fast will you deliver the design?",
       content: "The timeline for delivering a design can vary based on a few key factors including the complexity of the project, the number of revisions needed, and our current workload. Typically, for a standard web design project, you can expect to see an initial concept within 5-10 business days after I've received all the necessary information and materials."
+    },
+    {
+      title: "Do you work with complex projects?",
+      content: "Of course! I enjoy tackling difficult design tasks and creating visually appealing designs that prioritize user experience. I specialize in delivering high-quality design solutions for complex projects, focusing mainly on design rather than development. While I can handle both aspects for simpler projects, my strength lies in designing intricate ones."
     },
     {
       title: "Can you redesign my website?",
@@ -158,6 +206,8 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 });
+
+//Footer
 
 const footer = document.querySelector('.footer');
 
