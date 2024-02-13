@@ -245,7 +245,7 @@ links.forEach(link => {
   if (link.imageSrc) {
     const image = document.createElement('img');
     image.src = link.imageSrc;
-    image.alt = link.text;
+    image.alt = 'Social media icon';
     linkElement.appendChild(image);
   }
 
