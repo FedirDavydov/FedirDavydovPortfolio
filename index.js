@@ -55,12 +55,12 @@ const reviewsData = [
   },
   {
     imageSrc: "./Images/Client Image 2.webp",
-    reviewText: "««It was great to work with Fedir! His professionalism was 10 out of 10 and the result exceeded my expectations. I will recommend him to my colleagues and partners!»»",
+    reviewText: "«It was great to work with Fedir! His professionalism was 10 out of 10 and the result exceeded my expectations. I will recommend him to my colleagues and partners!»",
     clientInfo: "Yury"
   },
   {
     imageSrc: "./Assets/Client Image.svg",
-    reviewText: "««Fedir was one of the best people we have worked with on Upwork. His communication skills were excellent and his responsiveness allowed us to be really engaged in the design process»»",
+    reviewText: "«Fedir was one of the best people we have worked with on Upwork. His communication skills were excellent and his responsiveness allowed us to be really engaged in the design process»",
     clientInfo: "Varun"
   }
 ];
