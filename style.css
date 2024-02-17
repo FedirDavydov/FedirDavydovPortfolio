@@ -126,7 +126,6 @@ h3 {
 
 .secondary-button:hover {
   border-color: #1F74D9;
-
 }
 
 .logo {
@@ -263,6 +262,13 @@ h3 {
   }
 }
 
+@media (max-width: 768px) {
+
+  .client-logos {
+      margin-bottom: 100px;
+    }
+  }
+
 @media (max-width: 600px) {
   .logos-list {
     display: grid;
@@ -335,8 +341,17 @@ h3 {
   .benefits-list {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    gap: 16px;
   }
 }
+
+
+@media (max-width: 768px) {
+
+  .benefits {
+      margin-bottom: 100px;
+    }
+  }
 
 @media (max-width: 620px) {
   .benefits-list {
@@ -387,20 +402,23 @@ h3 {
 @media (max-width: 900px) {
   .projects-grid {
     grid-template-columns: 1fr;
+    gap: 16px;
   }
   .projects-grid img{
     height: auto;
   }
 }
 
+
+@media (max-width: 768px) {
+
+  .projects {
+      margin-bottom: 100px;
+    }
+  }
+
 .stats {
   margin-bottom: 150px;
-}
-
-.stats-wrapper {
-  display: flex;
-  justify-content: space-between;
-  height: fit-content;
 }
 
 .reviews {
@@ -445,23 +463,36 @@ h3 {
 @media (max-width: 1000px){
   .reviews-wrapper{
     flex-direction: column;
-    gap: 24px;
+    gap: 16px;
   }
   .review{
     width: 100%;
   }
 }
 
+
+@media (max-width: 768px) {
+
+  .reviews {
+      margin-bottom: 100px;
+    }
+  }
+
 .stats-info {
   display: flex;
   flex-direction: column;
   gap: 24px;
 }
+
+.stats-wrapper{
+  display: flex;
+  justify-content: space-between;
+}
+
 .awards{
   display: flex;
   gap: 24px;
 }
-
 
 .stats-list {
   display: flex;
@@ -476,16 +507,36 @@ h3 {
   font-size: 18px;
 }
 
-@media (max-width: 1050px) {
+@media (max-width: 1250px) {
   .stats-wrapper {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 48px;
   }
 
   .review {
     height: fit-content;
     padding: 24px;
+  }
+
+  .rankings{
+    width: 100%;
+    object-fit: contain;
+  }
+}
+
+
+@media (max-width: 768px) {
+
+  .stats {
+      margin-bottom: 100px;
+    }
+  }
+
+@media (max-width: 680px) {
+  .rankings{
+    display: none;
   }
 }
 
@@ -497,6 +548,61 @@ h3 {
   }
 }
 
+.process{
+  margin-bottom: 150px;
+}
+
+.process h2{
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
+  margin-bottom: 64px;
+}
+
+.process-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 24px;
+}
+
+.process-step{
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 16px;
+  background-color: white;
+  border: 2px solid rgba(33, 125, 233, 0.15);
+  border-radius: 8px;
+  height: 100%;
+}
+
+.process-step-header{
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+@media (max-width: 1250px){
+  .process-grid{
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+  }
+}
+
+@media (max-width: 800px){
+  .process-grid{
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+}
+
+
+@media (max-width: 768px) {
+
+  .process {
+      margin-bottom: 100px;
+    }
+  }
 
 .audit {
   display: flex;
@@ -507,9 +613,12 @@ h3 {
 
 .audit-content {
   display: flex;
+  align-items: center;
+  justify-content: center;
   flex-direction: column;
+  text-align: center;
   gap: 24px;
-  max-width: 525px;
+  max-width: 650px;
 }
 
 .audit button {
@@ -529,6 +638,14 @@ h3 {
     flex-flow: column-reverse;
   }
 }
+
+
+@media (max-width: 768px) {
+
+  .audit {
+      margin-bottom: 100px;
+    }
+  }
 
 @media (max-width: 570px) {
   .audit .primary-button{
@@ -599,6 +716,15 @@ h3 {
   transform: rotate(180deg);
 }
 
+
+
+@media (max-width: 768px) {
+
+  .FAQ {
+      margin-bottom: 100px;
+    }
+  }
+
 .CTA {
   display: flex;
   flex-direction: column;
@@ -623,8 +749,18 @@ h3 {
 }
 
 
+@media (max-width: 768px) {
+
+  .CTA {
+      margin-bottom: 100px;
+    }
+  }
 
 @media (max-width: 670px) {
+
+  .CTA{
+    padding: 24px;
+  }
   .cta-buttons {
     flex-direction: column;
     width: 100%;
@@ -682,18 +818,5 @@ footer {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     place-items: center;
-  }
-}
-
-@media (max-width: 768px) {
-
-  .hero,
-  .benefits,
-  .projects,
-  .audit,
-  .FAQ,
-  .CTA,
-  .stats {
-    margin-bottom: 100px;
   }
 }

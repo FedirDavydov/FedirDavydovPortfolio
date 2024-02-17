@@ -84,6 +84,75 @@ function renderReviews() {
 
 renderReviews();
 
+//Process
+
+const processSteps = [
+  {
+    imageSrc: "./Assets/1.svg",
+    title: "Discovery call",
+    description: "Every successful project begins with a detailed discovery call. This initial conversation is a pivotal moment where I dive deep into understanding your brand, your vision, and your specific needs. It\'s an opportunity for me to explore your goals, target audience, and any challenges you\’re facing. This step ensures that we\'re perfectly aligned from the start, setting a solid foundation for your project\’s success."
+  },
+
+  {
+    imageSrc: "./Assets/2.svg",
+    title: "Wireframes",
+    description: "This is where we start bringing your ideas to life. Think of wireframes as the blueprint of your website. It's like sketching out a map before building the real deal. I’ll outline the basic structure, layout, and elements of your pages. It's all about planning where everything goes, making sure it all makes sense for you and your visitors. This step saves us time down the road and makes sure we're on the same page from the get-go."
+  },
+
+  {
+    imageSrc: "./Assets/3.svg",
+    title: "Concepts",
+    description: "With a solid plan in place, it's time to bring creativity to the forefront. In the concept stage, I translate wireframes into visually compelling design concepts. This step is all about experimentation and innovation, as I explore different color schemes, typography, and imagery that align with your brand identity. You'll have the opportunity to review these concepts and provide feedback, ensuring our vision is perfectly in tune."
+  },
+
+  {
+    imageSrc: "./Assets/4.svg",
+    title: "Design",
+    description: "I translate your vision into an effective, cohesive, and aesthetically-pleasing digital presence. My thoughtful designs connect with your audience at an emotional level through visual storytelling. I ensure the user experience aligns seamlessly with your messaging. The final design intuitively guides your customers on a journey tailored to prompt action."
+  },
+
+  {
+    imageSrc: "./Assets/5.svg",
+    title: "Development",
+    description: "I take your approved designs and expertly code them into a fully functioning website. I use clean, efficient code and web best practices so your site loads fast and looks great on all devices. My development skills bring your vision to life with quality and care, delivering a custom site you can rely on to achieve your goals."
+  },
+
+  {
+    imageSrc: "./Assets/6.svg",
+    title: "Hand off",
+    description: "Since I built your website using custom code, I handle all updates and changes rather than handing off that responsibility. This ensures your site continues running smoothly and securely. Whenever you need any modifications - big or small - simply let me know and I will make them for you. With me taking care of the complex backend work, you can focus on your business while trusting your website is in good hands."
+  },
+
+];
+
+const processGrid = document.querySelector('.process-grid');
+
+processSteps.forEach((step) => {
+  const processStep = document.createElement('div');
+  processStep.classList.add('process-step');
+  
+  const processStepHeader = document.createElement('div');
+  processStepHeader.classList.add('process-step-header');
+  
+  const img = document.createElement('img');
+  img.src = step.imageSrc;
+  img.alt = "Number";
+  
+  const h3 = document.createElement('h3');
+  h3.textContent = step.title;
+  
+  const paragraph = document.createElement('p');
+  paragraph.textContent = step.description;
+  
+  processStepHeader.appendChild(img);
+  processStepHeader.appendChild(h3);
+  
+  processStep.appendChild(processStepHeader);
+  processStep.appendChild(paragraph);
+  
+  processGrid.appendChild(processStep);
+});
+
 //Stats
 
 const statsList = document.querySelector('.stats-list');
